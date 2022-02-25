@@ -5,7 +5,10 @@
   <title>Actualités</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/reset.css">
-  <!-- <script src="script.js"></script> -->
+  <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 </head>
 <body>
   <nav class="menu">
@@ -28,15 +31,21 @@
   <main>
     <header>
       <!--Slider header-->
-      <div class="slider">
-
-      </div>
-      <div class="localisation">
-        <p>Vous êtes ici :</p>
-        <a href="#">Accueil</a>
-        <a href="#">Acutalités</a>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../assets/img/montagne1.jpg"></div>
+          <div class="swiper-slide"><img src="../assets/img/montagne2.jpg"></div>
+          <div class="swiper-slide"><img src="../assets/img/montagne3.jpg"></div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </header>
+
+    <section class="localisation">
+      <p>Vous êtes ici :</p>
+      <a href="#">Accueil</a>
+      <a href="#">Acutalités</a>
+    </section>
 
     <section class="title">
       <h1>Actualités</h1>
@@ -44,61 +53,131 @@
     </section>
 
     <section class="filtres">
-      <button class="filtres-item" type="button">Tout</button>
-      <button class="filtres-item" type="button">Culture & Loisirs</button>
-      <button class="filtres-item" type="button">Enfance & Jeunesse</button>
-      <button class="filtres-item" type="button">Offres d'emploi</button>
-      <button class="filtres-item" type="button">Sports</button>
-      <button class="filtres-item" type="button">Travaux</button>
-      <button class="filtres-item" type="button">Urbanisme</button>
-      <button class="filtres-item" type="button">Vie intercommunale</button>
-      <button class="filtres-item" type="button">Vie locale</button>
-      <button class="filtres-item" type="button">Vie municipale</button>
-      <button class="filtres-item" type="button">Plus de filtres <i class="fas fa-angle-down"></i></button>
+      <button type="button">Tout</button>
+      <button type="button">Culture & Loisirs</button>
+      <button type="button">Enfance & Jeunesse</button>
+      <button type="button">Offres d'emploi</button>
+      <button type="button">Sports</button>
+      <button type="button">Travaux</button>
+      <button type="button">Urbanisme</button>
+      <button type="button">Vie intercommunale</button>
+      <button type="button">Vie locale</button>
+      <button type="button">Vie municipale</button>
+      <button type="button">Plus de filtres <i class="fas fa-angle-down"></i></button>
     </section>
 
     <section class="articles">
       <article class="card">
-        <img src="#" alt="img1">
-        <div>
-          <p>Nom de ma categorie</p>
+        <img src="../assets/img/chiens.jpg" alt="img1">
+        <div class="content">
+          <p class="categorie">Nom de ma categorie</p>
           <h2>Bienvenue sur notre nouveau site</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse unde officiis voluptatem quis impedit praesentium doloribus placeat nemo minus aspernatur omnis qui nobis odit fugit dignissimos laboriosam, quae inventore saepe.
           Dolorum quibusdam, maiores aspernatur numquam eos ea similique eaque nam omnis rerum aperiam, accusamus tempora deserunt, labore obcaecati! Asperiores similique, distinctio corporis fuga quisquam ad molestias cum nesciunt ducimus laborum!</p>
-          <div>
+          <div class="date">
             <i class="far fa-calendar"></i>
             <p>Actualité publié le 8 février 2016</p>
           </div>
         </div>
       </article>
-      <p>Vous avez 6 résultats sur 12</p>
-      <button class="affichage" type="button">Afficher plus</button>
+      <article class="card">
+        <img src="../assets/img/parc.jpg" alt="img1">
+        <div class="content">
+          <p class="categorie">Nom de ma categorie</p>
+          <h2>Bienvenue sur notre nouveau site</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse unde officiis voluptatem quis impedit praesentium doloribus placeat nemo minus aspernatur omnis qui nobis odit fugit dignissimos laboriosam, quae inventore saepe.
+          Dolorum quibusdam, maiores aspernatur numquam eos ea similique eaque nam omnis rerum aperiam, accusamus tempora deserunt, labore obcaecati! Asperiores similique, distinctio corporis fuga quisquam ad molestias cum nesciunt ducimus laborum!</p>
+          <div class="date">
+            <i class="far fa-calendar"></i>
+            <p>Actualité publié le 8 février 2016</p>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <img src="../assets/img/eglise.jpg" alt="img1">
+        <div class="content">
+          <p class="categorie">Nom de ma categorie</p>
+          <h2>Bienvenue sur notre nouveau site</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse unde officiis voluptatem quis impedit praesentium doloribus placeat nemo minus aspernatur omnis qui nobis odit fugit dignissimos laboriosam, quae inventore saepe.
+          Dolorum quibusdam, maiores aspernatur numquam eos ea similique eaque nam omnis rerum aperiam, accusamus tempora deserunt, labore obcaecati! Asperiores similique, distinctio corporis fuga quisquam ad molestias cum nesciunt ducimus laborum!</p>
+          <div class="date">
+            <i class="far fa-calendar"></i>
+            <p>Actualité publié le 8 février 2016</p>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <img src="../assets/img/foot.jpg" alt="img1">
+        <div class="content">
+          <p class="categorie">Nom de ma categorie</p>
+          <h2>Bienvenue sur notre nouveau site</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse unde officiis voluptatem quis impedit praesentium doloribus placeat nemo minus aspernatur omnis qui nobis odit fugit dignissimos laboriosam, quae inventore saepe.
+          Dolorum quibusdam, maiores aspernatur numquam eos ea similique eaque nam omnis rerum aperiam, accusamus tempora deserunt, labore obcaecati! Asperiores similique, distinctio corporis fuga quisquam ad molestias cum nesciunt ducimus laborum!</p>
+          <div class="date">
+            <i class="far fa-calendar"></i>
+            <p>Actualité publié le 8 février 2016</p>
+          </div>
+
+
+        </div>
+      </article>
+      <article class="card">
+        <img src="../assets/img/village.jpg" alt="img1">
+        <div class="content">
+          <p class="categorie">Nom de ma categorie</p>
+          <h2>Bienvenue sur notre nouveau site</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse unde officiis voluptatem quis impedit praesentium doloribus placeat nemo minus aspernatur omnis qui nobis odit fugit dignissimos laboriosam, quae inventore saepe.
+          Dolorum quibusdam, maiores aspernatur numquam eos ea similique eaque nam omnis rerum aperiam, accusamus tempora deserunt, labore obcaecati! Asperiores similique, distinctio corporis fuga quisquam ad molestias cum nesciunt ducimus laborum!</p>
+          <div class="date">
+            <i class="far fa-calendar"></i>
+            <p>Actualité publié le 8 février 2016</p>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <img src="../assets/img/enfants.jpg" alt="img1">
+        <div class="content">
+          <p class="categorie">Nom de ma categorie</p>
+          <h2>Bienvenue sur notre nouveau site</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse unde officiis voluptatem quis impedit praesentium doloribus placeat nemo minus aspernatur omnis qui nobis odit fugit dignissimos laboriosam, quae inventore saepe.
+          Dolorum quibusdam, maiores aspernatur numquam eos ea similique eaque nam omnis rerum aperiam, accusamus tempora deserunt, labore obcaecati! Asperiores similique, distinctio corporis fuga quisquam ad molestias cum nesciunt ducimus laborum!</p>
+          <div class="date">
+            <i class="far fa-calendar"></i>
+            <p>Actualité publié le 8 février 2016</p>
+          </div>
+        </div>
+      </article>
+      <div class="plus-d-article">
+        <p>Vous avez 6 résultats sur 12</p>
+        <div class="bouton"> <a href="#" class="animated-button btn">Afficher plus</a></div>
+      </div>
     </section>
 
     <section class="proposition-article">
       <i class="far fa-newspaper"></i>
       <div>
         <h2>Proposer une actualité</h2>
-        <p>Vous souhaitez nous signaler une actualité qui concerne le territoire et qui n'est pas répertorier sur le site Internet ? <br>Complétez le formulaire dédié et votre proposition sera étudiée par l'équipe en charge du site Internet.</p>
+        <p class="content">Vous souhaitez nous signaler une actualité qui concerne le territoire et qui n'est pas répertorier sur le site Internet ? <br>Complétez le formulaire dédié et votre proposition sera étudiée par l'équipe en charge du site Internet.</p>
       </div>
+      <div class="bouton"> <a href="#" class="animated-button btn"><i class="fas fa-edit"></i> Proposer</a></div>
     </section>
 
     <section class="boutons-bas">
       <div class="boutons">
-        <button type="button">Intitulé du bouton</button>
-        <button type="button">Intitulé du deuxième bouton</button>
-        <button type="button">Intitulé de l'autre bouton</button>
+        <div class="bouton"> <a href="#" class="animated-button btn">Intitulé du bouton</a></div>
+        <div class="bouton"> <a href="#" class="animated-button btn">Intitulé du deuxième bouton</a></div>
+        <div class="bouton"> <a href="#" class="animated-button btn">Intitulé de l'autre bouton</a></div>
       </div>
       <div class="partages">
-        <div class="pdf">
+        <div class="item">
           <i class="far fa-file-pdf"></i>
           <p>Télécharger en Pdf</p>
         </div>
-        <div class="imprimer">
+        <div class="item">
           <i class="fas fa-print"></i>
           <p>Imprimer la page</p>
         </div>
-        <div class="share">
+        <div class="item">
           <i class="fas fa-share-alt"></i>
           <p>Partager</p>
         </div>
@@ -137,5 +216,8 @@
   <!--Librairie icônes-->
 <script src="https://kit.fontawesome.com/d395830bbe.js" crossorigin="anonymous"></script>
 <style> @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');</style>
+<style> @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');</style>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
 </body>
 </html>
