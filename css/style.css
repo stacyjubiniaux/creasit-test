@@ -1,0 +1,46 @@
+/* MENU NAV */
+.menu {
+  background: black;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.liste-menu {
+  display: flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.menu-item:after {
+  content: "|";
+  color: white;
+  margin-left: 25px;
+}
+
+.menu-item a {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+} 
+
+.menu-logo i {
+  color: white;
+}
+
+.menu-logo i {
+  font-size: 30px;
+}
+
+.menu-logo i:first-child {
+  margin-right: 30px;
+}
+
+/* SECTION TITRE */
