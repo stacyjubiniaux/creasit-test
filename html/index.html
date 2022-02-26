@@ -63,7 +63,25 @@
       <button type="button">Vie intercommunale</button>
       <button type="button">Vie locale</button>
       <button type="button">Vie municipale</button>
-      <button type="button">Plus de filtres <i class="fas fa-angle-down"></i></button>
+      <!-- <button type="button">Plus de filtres <i class="fas fa-angle-down"></i></button> -->
+      <form>
+        <div class="multiselect">
+          <div class="selectBox" onclick="showCheckboxes()">
+            <select>
+              <option>Plus de filtres</option>
+            </select>
+            <div class="overSelect"></div>
+          </div>
+          <div id="checkboxes">
+            <label for="one">
+              <input type="checkbox" id="one" />Filtre 1</label>
+            <label for="two">
+              <input type="checkbox" id="two" />Filtre 2</label>
+            <label for="three">
+              <input type="checkbox" id="three" />Filtre 3</label>
+          </div>
+        </div>
+      </form>
     </section>
 
     <section class="articles">
@@ -117,8 +135,6 @@
             <i class="far fa-calendar"></i>
             <p>Actualité publié le 8 février 2016</p>
           </div>
-
-
         </div>
       </article>
       <article class="card">
@@ -147,35 +163,115 @@
           </div>
         </div>
       </article>
+      <div class="voir-articles">
+        <article class="card">
+          <img src="../assets/img/mairie.jpg" alt="img1">
+          <div class="content">
+            <p class="categorie">Nom de ma categorie</p>
+            <h2>Bienvenue sur notre nouveau site</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse unde officiis voluptatem quis impedit praesentium doloribus placeat nemo minus aspernatur omnis qui nobis odit fugit dignissimos laboriosam, quae inventore saepe.
+            Dolorum quibusdam, maiores aspernatur numquam eos ea similique eaque nam omnis rerum aperiam, accusamus tempora deserunt, labore obcaecati! Asperiores similique, distinctio corporis fuga quisquam ad molestias cum nesciunt ducimus laborum!</p>
+            <div class="date">
+              <i class="far fa-calendar"></i>
+              <p>Actualité publié le 8 février 2016</p>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="../assets/img/fontaine.jpg" alt="img1">
+          <div class="content">
+            <p class="categorie">Nom de ma categorie</p>
+            <h2>Bienvenue sur notre nouveau site</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse unde officiis voluptatem quis impedit praesentium doloribus placeat nemo minus aspernatur omnis qui nobis odit fugit dignissimos laboriosam, quae inventore saepe.
+            Dolorum quibusdam, maiores aspernatur numquam eos ea similique eaque nam omnis rerum aperiam, accusamus tempora deserunt, labore obcaecati! Asperiores similique, distinctio corporis fuga quisquam ad molestias cum nesciunt ducimus laborum!</p>
+            <div class="date">
+              <i class="far fa-calendar"></i>
+              <p>Actualité publié le 8 février 2016</p>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="../assets/img/parking.jpg" alt="img1">
+          <div class="content">
+            <p class="categorie">Nom de ma categorie</p>
+            <h2>Bienvenue sur notre nouveau site</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse unde officiis voluptatem quis impedit praesentium doloribus placeat nemo minus aspernatur omnis qui nobis odit fugit dignissimos laboriosam, quae inventore saepe.
+            Dolorum quibusdam, maiores aspernatur numquam eos ea similique eaque nam omnis rerum aperiam, accusamus tempora deserunt, labore obcaecati! Asperiores similique, distinctio corporis fuga quisquam ad molestias cum nesciunt ducimus laborum!</p>
+            <div class="date">
+              <i class="far fa-calendar"></i>
+              <p>Actualité publié le 8 février 2016</p>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="../assets/img/piscine.jpg" alt="img1">
+          <div class="content">
+            <p class="categorie">Nom de ma categorie</p>
+            <h2>Bienvenue sur notre nouveau site</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse unde officiis voluptatem quis impedit praesentium doloribus placeat nemo minus aspernatur omnis qui nobis odit fugit dignissimos laboriosam, quae inventore saepe.
+            Dolorum quibusdam, maiores aspernatur numquam eos ea similique eaque nam omnis rerum aperiam, accusamus tempora deserunt, labore obcaecati! Asperiores similique, distinctio corporis fuga quisquam ad molestias cum nesciunt ducimus laborum!</p>
+            <div class="date">
+              <i class="far fa-calendar"></i>
+              <p>Actualité publié le 8 février 2016</p>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="../assets/img/ecole.jpg" alt="img1">
+          <div class="content">
+            <p class="categorie">Nom de ma categorie</p>
+            <h2>Bienvenue sur notre nouveau site</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse unde officiis voluptatem quis impedit praesentium doloribus placeat nemo minus aspernatur omnis qui nobis odit fugit dignissimos laboriosam, quae inventore saepe.
+            Dolorum quibusdam, maiores aspernatur numquam eos ea similique eaque nam omnis rerum aperiam, accusamus tempora deserunt, labore obcaecati! Asperiores similique, distinctio corporis fuga quisquam ad molestias cum nesciunt ducimus laborum!</p>
+            <div class="date">
+              <i class="far fa-calendar"></i>
+              <p>Actualité publié le 8 février 2016</p>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="../assets/img/concert.jpg" alt="img1">
+          <div class="content">
+            <p class="categorie">Nom de ma categorie</p>
+            <h2>Bienvenue sur notre nouveau site</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse unde officiis voluptatem quis impedit praesentium doloribus placeat nemo minus aspernatur omnis qui nobis odit fugit dignissimos laboriosam, quae inventore saepe.
+            Dolorum quibusdam, maiores aspernatur numquam eos ea similique eaque nam omnis rerum aperiam, accusamus tempora deserunt, labore obcaecati! Asperiores similique, distinctio corporis fuga quisquam ad molestias cum nesciunt ducimus laborum!</p>
+            <div class="date">
+              <i class="far fa-calendar"></i>
+              <p>Actualité publié le 8 février 2016</p>
+            </div>
+          </div>
+        </article>
+      </div>
       <div class="plus-d-article">
-        <p>Vous avez 6 résultats sur 12</p>
-        <div class="bouton"> <a href="#" class="animated-button btn">Afficher plus</a></div>
+        <p id="resultats">Vous avez 6 résultats sur 12</p>
+        <button type="button" onclick="changeText()" class="bouton-effect btn-effect bouton-afficher">Afficher plus</button>
       </div>
     </section>
 
     <section class="proposition-article">
       <i class="far fa-newspaper"></i>
-      <div>
+      <div class="content">
         <h2>Proposer une actualité</h2>
-        <p class="content">Vous souhaitez nous signaler une actualité qui concerne le territoire et qui n'est pas répertorier sur le site Internet ? <br>Complétez le formulaire dédié et votre proposition sera étudiée par l'équipe en charge du site Internet.</p>
+        <p>Vous souhaitez nous signaler une actualité qui concerne le territoire et qui n'est pas répertorier sur le site Internet ? <br>Complétez le formulaire dédié et votre proposition sera étudiée par l'équipe en charge du site Internet.</p>
       </div>
-      <div class="bouton"> <a href="#" class="animated-button btn"><i class="fas fa-edit"></i> Proposer</a></div>
+      <button><i class="fas fa-edit"></i> Proposer</button>
     </section>
 
     <section class="boutons-bas">
       <div class="boutons">
-        <div class="bouton"> <a href="#" class="animated-button btn">Intitulé du bouton</a></div>
-        <div class="bouton"> <a href="#" class="animated-button btn">Intitulé du deuxième bouton</a></div>
-        <div class="bouton"> <a href="#" class="animated-button btn">Intitulé de l'autre bouton</a></div>
+        <button class="bouton-effect btn-effect">Intitulé du bouton</button>
+        <button class="bouton-effect btn-effect">Intitulé du deuxième bouton</button>
+        <button class="bouton-effect btn-effect">Intitulé de l'autre bouton</button>
       </div>
       <div class="partages">
         <div class="item">
           <i class="far fa-file-pdf"></i>
-          <p>Télécharger en Pdf</p>
+          <p><a href="http://127.0.0.1/Creasit-test/creasit-test/html/index.html" download>Télécharger en Pdf</a></p>
         </div>
-        <div class="item">
+        <div class="item imprimer">
           <i class="fas fa-print"></i>
-          <p>Imprimer la page</p>
+          <a href="javascript:window.print()"><button>Imprimer la page</button></a>
         </div>
         <div class="item">
           <i class="fas fa-share-alt"></i>
@@ -193,7 +289,7 @@
         01234 Commune<br>
         Tél : <a class="telephone" href="#">+33 (0)2 34 56 78 90</a></p>
         <a class="telephone" href="#"></a>
-        <button type="button"><i class="fas fa-envelope"></i>Nous contacter</button>
+        <button class="bouton-footer"><i class="fas fa-envelope"></i>Nous contacter</a></button>
       </div>
       <div class="col2">
         <p class="titre">Horaires d'ouverture</p>
@@ -204,19 +300,23 @@
     </div>
 
     <div class="footer2">
-      <a class="footer2-lien" href="#">Accueil</a>
-      <a class="footer2-lien" href="#">Flux RSS</a>
-      <a class="footer2-lien" href="#">Accessibilité</a>
-      <a class="footer2-lien" href="#">Plan du site</a>
-      <a class="footer2-lien" href="#">Mentions légales</a>
-      <a class="footer2-lien" href="#">Confidentialité</a>
-      <a class="footer2-lien" href="#">&#169; Créasit</a>
+      <ul>
+        <li><a class="footer2-lien" href="#">Accueil</a></li>
+        <li><a class="footer2-lien" href="#">Flux RSS</a></li>
+        <li><a class="footer2-lien" href="#">Accessibilité</a></li>
+        <li><a class="footer2-lien" href="#">Plan du site</a></li>
+        <li><a class="footer2-lien" href="#">Mentions légales</a></li>
+        <li><a class="footer2-lien" href="#">Confidentialité</a></li>
+        <li><a class="footer2-lien" target="blank" href="https://www.creasit.fr/">&#169; Créasit</a></li>
+      </ul>
     </div>
   </footer>
-  <!--Librairie icônes-->
+<!--Librairie icônes-->
 <script src="https://kit.fontawesome.com/d395830bbe.js" crossorigin="anonymous"></script>
+<!--Fonts-->
 <style> @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');</style>
 <style> @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');</style>
+<!--Script Swipper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="../js/script.js"></script>
 </body>
