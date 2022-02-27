@@ -22,10 +22,10 @@ const btn = document.querySelector('.bouton-afficher');
 const articles = document.querySelector('.voir-articles');
 
 btn.addEventListener('click', () => {
-  // Afficher plus d'article 
+  // Afficher plus d'article avec un toggle de class
   articles.classList.toggle('is-visible');
-  var resultats = document.getElementById("resultats");
   // Modifier la valeur du résultat 
+  var resultats = document.getElementById("resultats");
   if (resultats.innerHTML === "Vous avez 6 résultats sur 12") {
     resultats.innerHTML = "Vous avez 12 résultats sur 12";
   } else {
@@ -53,3 +53,4 @@ function showCheckboxes() {
     expanded = false;
   }
 }
+

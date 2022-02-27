@@ -1,4 +1,5 @@
-* {
+*,
+.footer1 {
   font-family: 'Roboto', sans-serif;
   line-height: 1.3;
 }
@@ -6,7 +7,8 @@
 /*----------------------------- CLASSES RÉUTILISABLES -----------------------------*/
 
 /* Titres H2 */
-main h2 {
+main h2,
+.footer1 .titre {
   font-size: 28px;
 }
 
@@ -84,10 +86,12 @@ button {
   justify-content: space-around;
   padding: 25px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .liste-menu {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .menu-item:not(:last-child) {
@@ -231,6 +235,8 @@ header {
 .filtres {
   background: rgb(230, 230, 230);
   padding: 25px 190px 35px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .filtres button {
@@ -238,25 +244,30 @@ header {
   padding: 10px 15px;
   border-radius: 35px;
   background: white;
-  border: 2px solid white;
+  border: 3px solid white;
   color: grey;
   text-transform: uppercase;
   margin-top: 10px;
   font-weight: bold;
+  max-height: 40px;
 }
 
 .filtres button:hover {
   background: #3E3EDF;
-  border: 2px solid #3E3EDF;
+  border: 3px solid #3E3EDF;
   color: white;
   transition: ease-in-out .3s;
 }
 
-.filtres button:not(:first-child) {
+.filtres button {
   margin-left: 10px;
 }
 
 /* Plus de filtres */
+
+form {
+  margin-left: 10px!important;
+}
 
 .multiselect {
   width: 200px;
@@ -336,6 +347,7 @@ select option {
 .card img {
   width: 400px;
   margin: 20px;
+  object-fit: cover;
 }
 
 .card .content {
@@ -408,6 +420,7 @@ select option {
   font-size: 90px;
   color: rgb(175, 175, 175);
   text-align: center;
+  margin: 0 50px;
 }
 
 .proposition-article .content h2 {
@@ -425,6 +438,7 @@ select option {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
+  margin: 0 50px;
 }
 
 .proposition-article button i {
@@ -441,6 +455,11 @@ select option {
 .boutons-bas .boutons {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.boutons-bas .boutons button {
+  margin-top: 10px;
 }
 
 .boutons-bas .boutons button:not(:last-child) {
@@ -504,7 +523,6 @@ select option {
 
 /*----------------------------- FOOTER -----------------------------*/
 .footer1 {
-  font-family: 'Roboto', sans-serif;
   background: #3E3EDF;
   color: white;
   padding: 50px 190px;
@@ -514,7 +532,6 @@ select option {
 
 .footer1 .col1 .titre,
 .footer1 .col2 .titre { 
-  font-size: 28px;
   font-weight: bold;
   margin-bottom: 30px;
 }
@@ -534,19 +551,21 @@ select option {
 }
 
 .footer2 {
-  margin: 25px 0;
+  margin: 25px 5px;
 }
 
 .footer2 ul {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  line-height: 1.5;
 }
 
 .footer2 ul li:not(:last-child) {
   margin-right: 25px;
 }
 
-.footer2 ul li:after {
+.footer2 ul li:not(:last-child):after {
   content: "|";
   color: black;
   margin-left: 25px;
@@ -557,6 +576,12 @@ select option {
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
 } 
+
+.footer2 ul li a:hover {
+  color: #3E3EDF;
+  font-weight: bold;
+  transition: .3s ease-in-out;
+}
 
 .bouton-footer {
   background: white;
@@ -579,3 +604,133 @@ select option {
   color: white;
   transition: .3s ease-in-out;
 }
+
+
+/*----------------------------- RESPONSIF -----------------------------*/
+
+@media screen and (max-width: 1280px) {
+  .localisation {
+    margin: 0 0 0 100px;
+  }
+  .title {
+    padding: 50px 100px;
+  }
+  .filtres {
+    padding: 25px 100px 35px;
+  }
+  .articles {
+    margin: 60px 100px;
+  }
+  .proposition-article {
+    margin: 0 100px 50px;
+  }
+  .footer1 {
+    padding: 50px 100px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    flex-wrap: wrap;
+  }
+  .card img {
+    width: 93%;
+    max-height: 300px;
+    object-fit: cover;
+    margin: 20px auto 0;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .proposition-article {
+   display: block;
+   text-align: center;
+   padding: 30px;
+  }
+  .proposition-article .fa-newspaper {
+     margin: 0 0 30px;
+  }
+  .proposition-article button {
+     margin: 30px auto 0;
+  }
+ }
+
+ @media screen and (max-width: 768px) {
+  header {
+    height: 55vh;
+  }
+  .footer1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer1 .col2 {
+    margin-left: 0;
+  }
+  .localisation {
+    margin: 0 0 0 50px;
+  }
+  .title {
+    padding: 50px;
+  }
+  .filtres {
+    padding: 25px 50px 35px;
+  }
+  .articles {
+    margin: 60px 50px;
+  }
+  .proposition-article {
+    margin: 0 50px 50px;
+  }
+  .footer1 {
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 721px) {
+  .footer1 .col2 {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .partages {
+    display: block!important;
+  }
+  .partages .item {
+    justify-content: center;
+    margin-right: 0!important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .localisation {
+    margin: 0 0 0 35px;
+  }
+  .title {
+    padding: 50px 35px;
+  }
+  .filtres {
+    padding: 25px 35px 35px;
+  }
+  .articles {
+    margin: 60px 35px;
+  }
+  .proposition-article {
+    margin: 0 35px 50px;
+  }
+  .footer1 {
+    padding: 50px 35px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .title h1 {
+    font-size: 45px;
+  }
+}
+
+.boutons-bas {
+  display: none;
+}
+
