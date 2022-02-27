@@ -12,6 +12,7 @@
     />
 </head>
 <body>
+  <!--_______________________ Menu NAV _______________________-->
   <nav class="menu">
     <div class="menu-container">
       <ul class="liste-menu">
@@ -26,10 +27,31 @@
         <i class="far fa-eye"></i>
         <i class="fas fa-search"></i>
       </div>
+      <i class="fas fa-bars btn-burger"></i>
     </div>
   </nav>
+  <!--_______________________ Menu mobile _______________________-->
+  <div class="menu-mobile">
+    <input id="burger" type="checkbox" />
+    <label for="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <nav>    
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Municipalité</a></li>
+        <li><a href="#">Vie pratique</a></li>
+        <li><a href="#">Vie culturelle</a></li>
+        <li><a href="#">Enfance & Jeunesse</a></li>
+        <li><a href="#">Économie & Emploi</a></li>
+      </ul>  
+    </nav>
+  </div>
 
   <main>
+    <!--_______________________ Header _______________________-->
     <header>
       <!--Slider header-->
       <div class="swiper mySwiper">
@@ -42,17 +64,20 @@
       </div>
     </header>
 
+    <!--_______________________ Section localisation _______________________-->
     <section class="localisation">
       <p>Vous êtes ici :</p>
       <a href="#">Accueil</a>
       <a href="#">Acutalités</a>
     </section>
 
+    <!--_______________________ Section titre _______________________-->
     <section class="title">
       <h1>Actualités</h1>
       <p>Retrouvez ci-dessous toutes nos actualités, classées par catégories. Cliquez sur une actualité pour en savoir plus.</p>
     </section>
 
+    <!--_______________________ Section filtres _______________________-->
     <section class="filtres">
       <button type="button">Tout</button>
       <button type="button">Culture & Loisirs</button>
@@ -64,7 +89,6 @@
       <button type="button">Vie intercommunale</button>
       <button type="button">Vie locale</button>
       <button type="button">Vie municipale</button>
-      <!-- <button type="button">Plus de filtres <i class="fas fa-angle-down"></i></button> -->
       <form>
         <div class="multiselect">
           <div class="selectBox" onclick="showCheckboxes()">
@@ -73,7 +97,7 @@
             </select>
             <div class="overSelect"></div>
           </div>
-          <div id="checkboxes">
+          <div id="checkboxes" class="checkboxes-style">
             <label for="one">
               <input type="checkbox" id="one" />Filtre 1</label>
             <label for="two">
@@ -85,9 +109,10 @@
       </form>
     </section>
 
+    <!--_______________________ Section Artciles _______________________-->
     <section class="articles">
       <article class="card">
-        <img src="../assets/img/chiens.jpg" alt="img1">
+        <img src="../assets/img/chiens.jpg" alt="Photo de chiens">
         <div class="content">
           <p class="categorie">Nom de ma categorie</p>
           <h2>Bienvenue sur notre nouveau site</h2>
@@ -100,7 +125,7 @@
         </div>
       </article>
       <article class="card">
-        <img src="../assets/img/parc.jpg" alt="img1">
+        <img src="../assets/img/parc.jpg" alt="Photo d'un parc">
         <div class="content">
           <p class="categorie">Nom de ma categorie</p>
           <h2>Bienvenue sur notre nouveau site</h2>
@@ -113,7 +138,7 @@
         </div>
       </article>
       <article class="card">
-        <img src="../assets/img/eglise.jpg" alt="img1">
+        <img src="../assets/img/eglise.jpg" alt="Photo d'une église">
         <div class="content">
           <p class="categorie">Nom de ma categorie</p>
           <h2>Bienvenue sur notre nouveau site</h2>
@@ -126,7 +151,7 @@
         </div>
       </article>
       <article class="card">
-        <img src="../assets/img/foot.jpg" alt="img1">
+        <img src="../assets/img/foot.jpg" alt="Photo de foot">
         <div class="content">
           <p class="categorie">Nom de ma categorie</p>
           <h2>Bienvenue sur notre nouveau site</h2>
@@ -139,7 +164,7 @@
         </div>
       </article>
       <article class="card">
-        <img src="../assets/img/village.jpg" alt="img1">
+        <img src="../assets/img/village.jpg" alt="Photo d'un village">
         <div class="content">
           <p class="categorie">Nom de ma categorie</p>
           <h2>Bienvenue sur notre nouveau site</h2>
@@ -152,7 +177,7 @@
         </div>
       </article>
       <article class="card">
-        <img src="../assets/img/enfants.jpg" alt="img1">
+        <img src="../assets/img/enfants.jpg" alt="Photo des enfants">
         <div class="content">
           <p class="categorie">Nom de ma categorie</p>
           <h2>Bienvenue sur notre nouveau site</h2>
@@ -166,7 +191,7 @@
       </article>
       <div class="voir-articles">
         <article class="card">
-          <img src="../assets/img/mairie.jpg" alt="img1">
+          <img src="../assets/img/mairie.jpg" alt="Photo de la mairie">
           <div class="content">
             <p class="categorie">Nom de ma categorie</p>
             <h2>Bienvenue sur notre nouveau site</h2>
@@ -179,7 +204,7 @@
           </div>
         </article>
         <article class="card">
-          <img src="../assets/img/fontaine.jpg" alt="img1">
+          <img src="../assets/img/fontaine.jpg" alt="Photo d'une fontaine">
           <div class="content">
             <p class="categorie">Nom de ma categorie</p>
             <h2>Bienvenue sur notre nouveau site</h2>
@@ -192,7 +217,7 @@
           </div>
         </article>
         <article class="card">
-          <img src="../assets/img/parking.jpg" alt="img1">
+          <img src="../assets/img/parking.jpg" alt="Photo d'un parking">
           <div class="content">
             <p class="categorie">Nom de ma categorie</p>
             <h2>Bienvenue sur notre nouveau site</h2>
@@ -205,7 +230,7 @@
           </div>
         </article>
         <article class="card">
-          <img src="../assets/img/piscine.jpg" alt="img1">
+          <img src="../assets/img/piscine.jpg" alt="Photo de la piscine">
           <div class="content">
             <p class="categorie">Nom de ma categorie</p>
             <h2>Bienvenue sur notre nouveau site</h2>
@@ -218,7 +243,7 @@
           </div>
         </article>
         <article class="card">
-          <img src="../assets/img/ecole.jpg" alt="img1">
+          <img src="../assets/img/ecole.jpg" alt="Photo de l'école">
           <div class="content">
             <p class="categorie">Nom de ma categorie</p>
             <h2>Bienvenue sur notre nouveau site</h2>
@@ -231,7 +256,7 @@
           </div>
         </article>
         <article class="card">
-          <img src="../assets/img/concert.jpg" alt="img1">
+          <img src="../assets/img/concert.jpg" alt="Photo d'un concert">
           <div class="content">
             <p class="categorie">Nom de ma categorie</p>
             <h2>Bienvenue sur notre nouveau site</h2>
@@ -244,12 +269,14 @@
           </div>
         </article>
       </div>
+      <!--_______________________ Élément plus d'articles _______________________-->
       <div class="plus-d-article">
         <p id="resultats">Vous avez 6 résultats sur 12</p>
         <button type="button" onclick="changeText()" class="bouton-effect btn-effect bouton-afficher">Afficher plus</button>
       </div>
     </section>
 
+    <!--_______________________ Section proposition d'articles _______________________-->
     <section class="proposition-article">
       <i class="far fa-newspaper"></i>
       <div class="content">
@@ -259,6 +286,7 @@
       <button><i class="fas fa-edit"></i> Proposer</button>
     </section>
 
+    <!--_______________________ Section boutons bas _______________________-->
     <section class="boutons-bas">
       <div class="boutons">
         <button class="bouton-effect btn-effect">Intitulé du bouton</button>
@@ -282,6 +310,7 @@
     </section>
   </main>
 
+  <!--_______________________ Footer _______________________-->
   <footer>
     <div class="footer1">
       <div class="col1">

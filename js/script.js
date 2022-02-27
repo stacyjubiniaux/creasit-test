@@ -53,4 +53,4 @@ function showCheckboxes() {
     expanded = false;
   }
 }
-
+/*Changement du display en fonction d'une valeur true ou false */
